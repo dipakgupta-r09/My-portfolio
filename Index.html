@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background:#0b1020;
+    color:#e5e7eb;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    padding:15px 60px;
+    background:rgba(11,16,32,0.95);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+.logo{
+    color:#a855f7;
+    font-size:22px;
+    font-weight:600;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+nav a{
+    color:#e5e7eb;
+    text-decoration:none;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#22d3ee;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#1e1b4b,#0f172a);
+}
+.hero h1{
+    font-size:3rem;
+}
+.hero span{
+    color:#22d3ee;
+}
+.hero p{
+    margin-top:10px;
+    opacity:0.9;
+}
+.btn{
+    margin-top:25px;
+    padding:12px 30px;
+    background:#22d3ee;
+    color:#020617;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.1);
+}
+
+section{
+    padding:90px 10%;
+}
+.section-title{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:40px;
+    color:#a855f7;
+}
+
+
+.skill{
+    margin-bottom:20px;
+}
+.skill p{
+    margin-bottom:6px;
+}
+.bar{
+    background:#6691d6;
+    border-radius:20px;
+    overflow:hidden;
+}
+.bar span{
+    display:block;
+    height:10px;
+    background:linear-gradient(90deg,#a855f7,#22d3ee);
+}
+
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.card{
+    background:#111827;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(168,85,247,0.3);
+}
+.card video,
+.card audio{
+    width:100%;
+    margin-top:10px;
+    border-radius:10px;
+}
+
+
+.contact{
+    text-align:center;
+}
+.contact a{
+    margin:0 12px;
+    color:#22d3ee;
+    text-decoration:none;
+    font-weight:500;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+
+
+
+@media(max-width:1024px){
+    .projects{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:600px){
+    nav{
+        padding:15px 25px;
+    }
+    .hero h1{
+        font-size:2.2rem;
+    }
+    .projects{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+
+
+<nav>
+    <div class="logo">Student Portfolio</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section id="home" class="hero">
+    <h1>Hi, I'm <span>DIPAK</span></h1>
+    <p>Student | Web Developer | Programmer</p>
+    <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><span style="width:85%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><span style="width:75%"></span></div>
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">Projects & Media</h2>
+
+    <div class="projects">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive student portfolio using HTML & CSS.</p>
+        </div>
+        <div class="projects">
+        <div class="card">
+            <h3>asic Arithmetic Calculator</h3>
+            <p>A simple web application that performs addition, subtraction, multiplication, and division using JavaSricpt</p>
+        </div>
+        <div class="projects">
+        <div class="card">
+            <h3> Event Listeners Example </h3>
+            <p> An event listener is used in JavaScript to execute a function when a user performs an action like clicking a button or typing on the keyword  </p>
+        </div>
+
+        
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email:deepakguptaji8071@gmail.com</p><br>
+    <a href="GitHub https://share.google/iAH3r61lwWizFr7DZ">GitHub</a>
+    <a href="https://www.linkedin.com/in/dipak-gupta-7897533a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+    <a href="https://www.instagram.com/dipu_u.9/?utm_source=ig_web_button_share_sheet">Instagram</a>
+</section>
+
+<footer>
+    <p>© 2025 Student Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+  </html>
